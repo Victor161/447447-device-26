@@ -16,11 +16,23 @@
 
       <button class="enter" type="button">Войти</button>
 
-      <button class="compare" type="button">Сравнить</button>
+      <a class="compare">Сравнить</a>
 
-      <button class="basket" type="button">Корзина</button>
+      <a class="basket">Корзина</a>
 
-      <button class="dropdown_catalog" type="button">Каталог товаров</button>
+      <a class="dropdown_catalog">Каталог товаров</a>
+
+      <!--- Я пока не знаю как привязать выпадающий список товаров к ссылке "Каталог товаров"...
+      И ещё я не знаю, наименования каталога (теги li) это ссылки?-->
+
+      <ul>
+          <li>Виртуальная реальность</li>
+          <li>Моноподы для селфи</li>
+          <li>Экшн-камеры</li>
+          <li>Фитнес-браслеты</li>
+          <li>Умные часы</li>
+          <li>Квадрокоптеры</li>
+      </ul>
 
         <!-- Ссылка для удобства перехода-->
       <a href="catalog.html">Переход на страницу каталога</a>
@@ -42,9 +54,85 @@
 
     <main>
 
+
+      <!--Здесь будет описание товаров магазина-->
+
+
+
+
+
+
+
+
+
+
+      <section>
+        <aside class="about_us">
+            <img src="" width="80" height="7">
+            <p>О нас</p>
+            <p>
+              Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас
+            </p>
+            <p>
+              Мы можем доставить ваш товар в самые отдаленные точки<br>
+              России! DEVICE работает со многими транспортными компаниями
+            </p>
+            <ul class="trans_comp_list">
+              <li>Деловые линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <button class="btn_about_us" type="button">ПОДРОБНЕЕ О НАС</button>
+        </aside>
+
+       <aside class="write_us">
+          <img src="" width="80" height="7">
+          <p>Контакты</p>
+          <p>
+            Вы можете забрать товар сами, заехав наш офис.<br>
+             Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+          </p>
+          
+          <img class="map" src="" width="560" height="222" alt="Карта расположение магазина">
+
+          <button class="btn_write_us" type="button">НАПИШИТЕ НАМ</button>
+       </aside>
+      </section>
     </main>
 
     <footer>
+      <header class="footer-head">
+          <img src="" width="163" height="35" alt="Логотип магазина Device">
+          <button class="enter" type="button">Войти</button>
+          <a class="compare">Сравнить</a>
+          <a class="basket">Корзина</a>
+      </header>
+      <section class="footer_nav">
+        <p class="address">г. Москва, ул. Строителей, 15</p>
+        <ul class="site_navigation">
+            <li class="nav_page_item">
+              <a class="nav_link" href="">Доставка</a>
+            </li>
+            <li class="nav_page_item">
+              <a class="nav_link" href="">Гарантия</a>
+            </li>
+            <li class="nav_page_item">
+              <a class="nav_link" href="http">Контакты</a>
+            </li>
+          </ul>
+          <p class="telefone">Тел.: +7(495)495-95-95</p>
+      </section>
+      <section>
+          <img src="" width="80" height="7">
+          <div class="footer_social">
+            <ul>
+              <li class="facebook"><a href="">facebook</a></li>
+              <li class="instagramm"><a href="">instagramm</a></li>
+              <li class="twitter"><a href="">twitter</a></li>
+            </ul>
+            <a class="logo_html" href=""></a>
+          </div>
+      </section>
 
     </footer>
   </body>
