@@ -12,30 +12,13 @@
         <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Device">
       </a>
 
-      <form action="" method="">
-        <input class="search" type="text" value="Поиск по сайту">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="search_device" class="visually-hidden"></label>
+        <input class="search" type="text" id="search_device" name="search_site" value="Поиск по сайту">
         <button class="search_btn" type="button">Найти</button>
       </form>
 
       <a class="enter" href="">Войти</a>
-
-      <!--ПОПАП для ВХОДа (в личный кабинет)-->
-
-      <section>
-        <h2>Личный кабинет</h2>
-        <form action="" method="">
-            <p>Введите свой логи и пароль</p>
-            <p>
-              <input type="text" name="login_user" placeholder="Логин">
-            </p>
-            <p>
-              <input type="password" name="password_user" placeholder="Пароль">
-            </p>
-            <button type="button">Закрыть</button>
-        </form>
-      </section>
-
-      <!--..................................-->
 
       <a class="compare" href="">Сравнить</a>
 
@@ -44,7 +27,6 @@
       <a class="dropdown_catalog" href="catalog.html">Каталог товаров</a>
 
       
-
       <ul>
          <li><a href="">Виртуальная реальность</a></li>
          <li><a href="">Моноподы для селфи</a></li>
@@ -83,22 +65,6 @@
 
 
 
-      <!--ПОПАП ввода личных данных, который ПОСРЕДИНЕ в макете к ТЕКУЩЕМУ заданию-->
-      
-        <section>
-          <form action="" method="">
-            <label for="name_user">Ваше имя:</label>
-            <input id="name_user" type="text" placeholder="Имя Фамилия">
-            <label for="email_user">Ваш e-mail:</label>
-            <input id="email_user" type="text" placeholder="email@yandex.ru">
-            <label for="text_user">Текст письма:</label>
-            <textarea id="text_user"></textarea>
-            <button type="submit">Отправить</button>
-            <button type="submit">Закрыть</button>
-          </form>
-        </section>
-
-      <!--............................................-->
       
         <div class="about_us">
             <p>О нас</p>
@@ -125,19 +91,8 @@
           </p>
           
           <a href="">
-            <img class="map" src="img/map.png" width="560" height="222" alt="Карта расположение магазина">
+            <img class="map" src="img/map.png" width="560" height="222" alt="Карта расположения магазина">
           </a>
-
-           <!--ПОПАП на Большую карту--> 
-          <section>
-            <h2 class="visually_hidden">Как к нам добраться</h2>
-            <p>
-              <img src="img/map-big.png" width="994" height="593" alt="Магазин находится по адресу: 
-              г. Москва, ул. Строителей, 15">
-            </p>
-            <button class="btn_close" type="button">Закрыть</button>
-          </section>
-          <!--......................................-->
 
           <a class="btn_write_us" href="">Напишите нам</a>
        </div>
@@ -178,5 +133,34 @@
       </section>
 
     </footer>
+
+      <!--ПОПАП ввода личных данных, который ПОСРЕДИНЕ в макете к ТЕКУЩЕМУ заданию-->
+      
+      <section>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label for="name_user">Ваше имя:</label>
+            <input id="name_user" type="text" name="user_name" placeholder="Имя Фамилия">
+            <label for="email_user">Ваш e-mail:</label>
+            <input id="email_user" type="email" name="user_email" placeholder="email@yandex.ru">
+            <label for="text_user">Текст письма:</label>
+            <textarea id="text_user"></textarea>
+            <button type="submit">Отправить</button>
+            <button type="button">Закрыть</button>
+          </form>
+        </section>
+
+      <!--............................................-->
+
+      <!--ПОПАП на Большую карту--> 
+      <section>
+          <h2 class="visually_hidden">Как к нам добраться</h2>
+          <p>
+            <img src="img/map-big.png" width="994" height="593" alt="Магазин находится по адресу: 
+            г. Москва, ул. Строителей, 15">
+          </p>
+          <button class="btn_close" type="button">Закрыть</button>
+        </section>
+        <!--......................................-->
+
   </body>
 </html>
