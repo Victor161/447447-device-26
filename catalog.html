@@ -9,12 +9,18 @@
 
       <nav class="main_navigation">
         <a class="main_header-logo" href="index.html"> 
-            <img src="" width="163" height="35" alt="Логотип магазина Device">
+            <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Device">
         </a>
 
-      <input class="search" type="text" value="Поиск по сайту"></input>
+      <form action="" method="">
+            <input class="search" type="text" value="Поиск по сайту">
+            <button class="search_btn" type="button">Найти</button>
+      </form>
 
-      <!-- Форма для Авторизованного пользователя-->
+      <form action="" method="">
+          <input class="login_visible" type="text" disabled>
+          <button class="exit" type="button">Выйти</button>
+      </form>
 
       <a class="compare">Сравнить</a>
 
@@ -51,28 +57,57 @@
           <li class="monopods">Моноподы для селфи</li>
       </ul>
 
-       <!-- здесь будут ФОРМЫ -->
+       <!-- здесь ФОРМА ФИЛЬТРОВ -->
 
-      <span>
-          <p>Цвет</p>
-          <span>Черный</span>
-          <span>Белый</span>
-          <span>Синий</span>
-          <span>Красный</span>
-          <span>Розовый</span>
-      </span>
-      <span>
-          <p>Bluetooth</p>
-          <span>Есть</span>
-          <span>Нет</span>
-      </span>
-      <span>Показать</span>       
+       <form action="" method="">
+         <h2 class="visually-hidden">Фильтр товаров</h2>
+         <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <input class="visually_hidden" type="checkbox" id="color_black" name="black">
+                <label for="color_black">Черный</label>
+              </li>
+              <li>
+                  <input class="visually_hidden" type="checkbox" id="color_white" name="white" checked>
+                  <label for="color_white">Белый</label>
+              </li>
+              <li>
+                  <input class="visually_hidden" type="checkbox" id="color_blue" name="blue">
+                  <label for="color_blue">Синий</label>
+              </li>
+              <li>
+                  <input class="visually_hidden" type="checkbox" id="color_red" name="red">
+                  <label for="color_red">Красный</label>
+              </li>
+              <li>
+                  <input class="visually_hidden" type="checkbox" id="color_pink" name="pink">
+                  <label for="color_pink">Розовый</label>
+              </li>
+            </ul>
+         </fieldset>
+         <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                 <input class="visually-hidden" type="radio" id="bluetooth_on" name="bluetooth" checked>
+                 <label for="bluetooth_on">Есть</label>
+              </li>
+              <li>
+                  <input class="visually-hidden" type="radio" id="bluetooth_off" name="bluetooth">
+                  <label for="bluetooth_off">Нет</label>
+               </li>
+            </ul>
+         </fieldset>
+         <button type="submit">Показать</button>
+       </form>
 
-   
+       <!--.........................-->
+
 
     <ul class="catalog_items">
       <h2 class="visually_hidden">Список моноподов для селфи</h2>
-        <li class="item-1">
+        <li class="item_1">
            <h3 class="header_item"><a href="">Любительская селфи палка</a></h3>
              <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи палка">
            </p>
@@ -80,7 +115,7 @@
              <b>500 руб.</b>
            </p>
         </li>
-        <li class="item-2">
+        <li class="item_2">
             <h3 class="header_item"><a href="">Профессиональная селфи палка</a></h3>
             <p>
               <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи палка">
@@ -116,7 +151,7 @@
 
     <footer>
         <header class="footer-head">
-            <img src="" width="163" height="35" alt="Логотип магазина Device">
+            <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Device">
             <a class="enter">Войти</a>
             <a class="compare">Сравнить</a>
             <a class="basket">Корзина</a>

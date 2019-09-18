@@ -9,12 +9,33 @@
 
     <nav class="main_navigation">
       <a class="main_header-logo"> 
-        <img src="" width="163" height="35" alt="Логотип магазина Device">
+        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Device">
       </a>
 
-      <input class="search" type="text" value="Поиск по сайту"></input>
+      <form action="" method="">
+        <input class="search" type="text" value="Поиск по сайту">
+        <button class="search_btn" type="button">Найти</button>
+      </form>
 
-      <button class="enter" type="button">Войти</button>
+      <a class="enter" href="">Войти</a>
+
+      <!--ПОПАП для ВХОДа (в личный кабинет)-->
+
+      <section>
+        <h2>Личный кабинет</h2>
+        <form action="" method="">
+            <p>Введите свой логи и пароль</p>
+            <p>
+              <input type="text" name="login_user" placeholder="Логин">
+            </p>
+            <p>
+              <input type="password" name="password_user" placeholder="Пароль">
+            </p>
+            <button type="button">Закрыть</button>
+        </form>
+      </section>
+
+      <!--..................................-->
 
       <a class="compare" href="">Сравнить</a>
 
@@ -22,8 +43,7 @@
 
       <a class="dropdown_catalog" href="catalog.html">Каталог товаров</a>
 
-      <!--- Я пока не знаю как привязать выпадающий список товаров к ссылке "Каталог товаров"...
-      И ещё я не знаю, наименования каталога (теги li) это ссылки?-->
+      
 
       <ul>
          <li><a href="">Виртуальная реальность</a></li>
@@ -51,7 +71,6 @@
 
     <main>
 
-
       <!--Здесь будет описание товаров магазина-->
 
 
@@ -60,9 +79,26 @@
 
 
 
+      <!--..............................................-->
 
 
 
+      <!--ПОПАП ввода личных данных, который ПОСРЕДИНЕ в макете к ТЕКУЩЕМУ заданию-->
+      
+        <section>
+          <form action="" method="">
+            <label for="name_user">Ваше имя:</label>
+            <input id="name_user" type="text" placeholder="Имя Фамилия">
+            <label for="email_user">Ваш e-mail:</label>
+            <input id="email_user" type="text" placeholder="email@yandex.ru">
+            <label for="text_user">Текст письма:</label>
+            <textarea id="text_user"></textarea>
+            <button type="submit">Отправить</button>
+            <button type="submit">Закрыть</button>
+          </form>
+        </section>
+
+      <!--............................................-->
       
         <div class="about_us">
             <p>О нас</p>
@@ -92,6 +128,16 @@
             <img class="map" src="img/map.png" width="560" height="222" alt="Карта расположение магазина">
           </a>
 
+           <!--ПОПАП на Большую карту--> 
+          <section>
+            <h2 class="visually_hidden">Как к нам добраться</h2>
+            <p>
+              <img src="img/map-big.png" width="994" height="593" alt="Магазин находится по адресу: 
+              г. Москва, ул. Строителей, 15">
+            </p>
+            <button class="btn_close" type="button">Закрыть</button>
+          </section>
+          <!--......................................-->
 
           <a class="btn_write_us" href="">Напишите нам</a>
        </div>
@@ -100,7 +146,7 @@
 
     <footer>
       <div class="footer-head">
-          <img src="" width="163" height="35" alt="Логотип магазина Device">
+          <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Device">
           <a class="enter">Войти</a>
           <a class="compare">Сравнить</a>
           <a class="basket">Корзина</a>
