@@ -1,0 +1,369 @@
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Gilroy Light"), local("Gilroy-Light"), 
+         url("../fonts/gilroylight.woff2") format("woff2"),
+         url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 700;
+    font-style: normal;
+    src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"), 
+         url("../fonts/gilroyextrabold.woff2") format("woff2"),
+         url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: normal;
+    src: local("OpenSans Regular"), local("OpenSans-Regular"), 
+         url("../fonts/opensans.woff2") format("woff2"),
+         url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: normal;
+    src: local("OpenSans Light"), local("OpenSans-Light"), 
+         url("../fonts/opensanslight.woff2") format("woff2"),
+         url("../fonts/opensanslight.woff") format("woff");    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Opensans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #ffffff;
+    background-position: bottom center;
+    color: #000000;
+}
+
+.inner_page {
+    
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+.header_index {
+    background-color: #f7e296;
+    width: 1160px;
+    height: 299px;
+    margin-bottom: 150px;
+}
+
+.header_catalog {
+    background-color: #f7e296;
+    width: 1160px;
+    height: 186px;  
+}
+
+.footer_main {
+    background-color: #464646;
+    background-position: bottom;
+    width: 100%;
+    height: 323px; 
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*-----Стили для фильтров-чекбоксов и радио------------*/
+
+.filters {
+    background-color: #eeeeee;
+    width: 468px;
+    height: 1287px;
+}
+
+.filters fieldset {
+    border: none;
+}
+
+.filters legend {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.filters .select_color,
+.filters .select_bluetooth {
+    font-size: 14px;
+    line-height: 40px;
+}
+
+
+.filters input[type="checkbox"] {
+    content: url(../img/checkbox-off.svg);
+    width: 27px;
+    height: 23px;
+}
+
+.filters input[type="radio"] {
+    content: url(../img/radio-off.svg);
+    width: 25px;
+    height: 25px;
+}
+
+/*------------------------------------------*/
+
+.breadcrumbs a,
+.breadcrumbs .item_disabled {
+    font-size: 14px;
+    line-height: 24px;
+    color: #b2b2b2;
+}
+
+.breadcrumbs a:hover {
+    color: #666666;
+}
+
+.breadcrumbs a:focus,
+.breadcrumbs .item_disabled {
+    color: #e5e5e5;
+}
+
+.visually_hidden_search {
+    content: url(../img/search.svg);
+    width: 16px;
+    height: 16px;
+}
+
+.enter::before {
+    content: url(../img/user.svg);
+    width: 13px;
+    height: 12px;
+}
+
+.compare::before {
+    content: url(../img/compare.svg);
+    width: 10px;
+    height: 10px;
+}
+
+.basket::before {
+    content: url(../img/basket.svg);
+    width: 12px;
+    height: 12px;
+}
+
+.dropdown_catalog::after {
+    content: url(../img/plus.svg);
+    width: 16px;
+    height: 16px;
+}
+
+.search,
+.enter,
+.compare,
+.basket,
+.catalog_list a,
+.footer_nav .telefone {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.catalog_list a {
+    line-height: 36px;
+}
+
+.dropdown_catalog,
+.nav_link,
+.about_us .btn_about_us,
+.write_us .btn_write_us,
+.filters .btn_show,
+.catalog_items .heading_item {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+.catalog_items .heading_item {
+    text-transform: none;
+}
+
+.catalog_items b {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+.enter:hover,
+.compare:hover,
+.basket:hover,
+.dropdown_catalog:hover,
+.nav_link:hover,
+.catalog_list a:hover {
+    color: #635a3c;
+}
+
+.enter:focus,
+.compare:focus,
+.basket:focus,
+.dropdown_catalog:focus,
+.nav_link:focus,
+.catalog_list a:focus {
+    color: #ac9e69;
+}
+
+/*---------стили для .pagination ----------------*/
+
+.pagination_list {
+    background-color: #ebebeb;
+    width: 760px;
+    height: 70px;
+    margin-bottom: 50px;
+}
+
+.pagination_item a,
+.pagination_btn a {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+.pagination_item a {
+    color: #b2b2b2;
+}
+
+.pagination_item a:hover {
+    color: #666666;
+}
+
+.pagination_item a:focus {
+    color: #000000;
+}
+
+.pagination_btn a:focus {
+    color: #979797;
+}
+
+/*---------------------------------------*/
+
+.about_us p.heading,
+.write_us p.heading,
+.heading_monopods {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Почему-то не срабатывает!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!....*/
+
+.about_us p.heading::after, 
+.write_us p.heading::after {
+    width: 80px;
+    height: 7px;
+    background: #000000;
+}
+
+/*..........................*/
+
+
+.about_us p.contents,
+.write_us p.contents,
+.footer_nav .address {
+    font-size: 15px;
+    color: #464646;
+    line-height: 30px;
+}
+
+.trans_comp_list .trans_item {
+    list-style: disc;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.footer_main .enter,
+.footer_main .compare,
+.footer_main .basket {
+    color: #c8c8c8;
+}
+
+.footer_nav .address,
+.footer_nav .telefone,
+.footer_nav .nav_link,
+.footer_main .enter:hover,
+.footer_main .compare:hover,
+.footer_main .basket:hover {
+    color: #ffffff;
+}
+
+.footer_nav .nav_link:hover {
+   color: #b5b5b5;
+}
+
+.footer_nav .nav_link:focus,
+.footer_main .enter:focus,
+.footer_main .compare:focus,
+.footer_main .basket:focus {
+   color: #7e7e7e;
+ }
+
+
+.trans_item {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+
+.facebook {
+    content: url(../img/facebook.svg);
+    width: 32px;
+    height: 32px;
+}
+
+.instagram {
+    content: url(../img/instagram.svg);
+    width: 32px;
+    height: 32px;
+}
+
+.twitter {
+    content: url(../img/twitter.svg);
+    width: 32px;
+    height: 32px;
+}
+
+.logo_html {
+    content: url(../img/logo-html.svg);
+    width: 27px;
+    height: 35px;
+}
+
+
+
+.pop_closed,
+.find_btn {
+    display: none;
+}
