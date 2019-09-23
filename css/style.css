@@ -295,12 +295,12 @@ ul {
 }
 
 .trans_comp_list .trans_item {
-    list-style: disc;
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 40px;
 }
+
 
 .footer_main .enter,
 .footer_main .compare,
@@ -336,6 +336,16 @@ ul {
     line-height: 30px;
 }
 
+/*----- Здесь я не пойму почему "кружочки" получаются такие крупные, не смотря
+на выставленные мной размеры 8px --------------------*/
+
+.trans_item::before {
+    content: url(../img/slider-button.svg);
+    width: 8px;
+    height: 8px;
+}
+
+/*------------------------------------*/
 
 .facebook {
     content: url(../img/facebook.svg);
