@@ -41,7 +41,8 @@ body {
     font-size: 18px;
     font-weight: 400;
     background-color: #ffffff;
-    background-position: bottom center;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #000000;
 }
 
@@ -58,6 +59,7 @@ ul {
     list-style: none;
 }
 
+
 button {
     border: none;
 }
@@ -65,16 +67,85 @@ button {
 .header_index {
     background-color: #f7e296;
     width: 1160px;
-    height: 299px;
-    margin-bottom: 150px;
+    min-height: 299px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
-.header_catalog {
-    background-color: #f7e296;
+.container {
     width: 1160px;
-    height: 186px;  
+    margin: 0 auto;
+    display: flex;
 }
 
+.main_navigation {
+    width: 1040px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.user-menu {
+    display: flex; 
+    margin-top: 36px;
+}
+
+.search_form {
+    margin-right: auto;  
+}
+
+.compare {
+    margin-right: 40px;
+}
+
+.enter {
+    margin-right: 216px;
+}
+
+.site_navigation {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 50px;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site_navigation li {
+    letter-spacing: 
+}
+    
+.delivery {
+    margin-left: 
+}
+
+.guarantee {
+    margin-left: 
+}
+
+.contacts {
+    margin-left:
+}
+
+.catalog_list {
+    list-style-type: none;
+    width: 552px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.catalog_list li {
+   flex-basis: 184px;
+}
+
+
+
+
+
+/*----------------------------------------------------*/
 .footer_main {
     background-color: #464646;
     background-position: bottom;
@@ -82,10 +153,11 @@ button {
     height: 323px; 
 }
 
-ul {
-    list-style: none;
+.header_catalog {
+    background-color: #f7e296;
+    width: 1160px;
+    min-height: 186px;  
 }
-
 
 /*-----Стили для фильтров-чекбоксов и радио------------*/
 
@@ -152,24 +224,28 @@ ul {
     content: url(../img/user.svg);
     width: 13px;
     height: 12px;
+    padding-right: 14px;
 }
 
 .compare::before {
     content: url(../img/compare.svg);
     width: 10px;
     height: 10px;
+    padding-right: 10px;
 }
 
 .basket::before {
     content: url(../img/basket.svg);
     width: 12px;
     height: 12px;
+    padding-right: 12px;
 }
 
 .dropdown_catalog::after {
     content: url(../img/plus.svg);
     width: 16px;
     height: 16px;
+    padding-left: 16px;
 }
 
 .search,
@@ -338,6 +414,8 @@ ul {
 
 /*----- Здесь я не пойму почему "кружочки" получаются такие крупные, не смотря
 на выставленные мной размеры 8px --------------------*/
+
+
 
 .trans_item::before {
     content: url(../img/slider-button.svg);

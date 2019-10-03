@@ -9,51 +9,63 @@
   <body>
     <header class="header_index">
 
-    <nav class="main_navigation">
-      <a class="main_header-logo"> 
-        <img class="logo_top" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Device">
-      </a>
+      <div class="container">
 
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="search_device" class="visually_hidden_search"></label>
-        <input class="search" type="text" id="search_device" 
-         name="search_site" value="Поиск по сайту">
-        <button class="find_btn" type="button">Найти</button>
-      </form>
+        <nav class="main_navigation">
+          <a class="main_header_logo"> 
+          <img class="logo_top" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Device">
+          </a>
 
-      <a class="enter" href="">Войти</a>
+        <div class="user-menu">
+          <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+            <label for="search_device" class="visually_hidden_search"></label>
+            <input class="search" type="text" id="search_device" 
+              name="search_site" value="Поиск по сайту">
+            <button class="find_btn" type="button">Найти</button>
+          </form>
 
-      <a class="compare" href="">Сравнить</a>
+          <a class="enter" href="">Войти</a>
+          <a class="compare" href="">Сравнить</a>
+          <a class="basket" href="">Корзина</a>
 
-      <a class="basket" href="">Корзина</a>
+        </div>
+      
+        
+          <ul class="site_navigation">
+            <li class="nav_page_item">
+              <a class="dropdown_catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="nav_page_item">
+              <a class="nav_link delivery" href="">Доставка</a>
+            </li>
+            <li class="nav_page_item">
+              <a class="nav_link guarantee" href="">Гарантия</a>
+            </li>
+            <li class="nav_page_item">
+              <a class="nav_link contacts" href="">Контакты</a>
+            </li>
+          </ul>
+        
+        
 
-      <a class="dropdown_catalog" href="catalog.html">Каталог товаров</a>
+        <ul class="catalog_list">
+          <li class="catalog_menu_item virtual"><a href="">Виртуальная реальность</a></li>
+          <li class="catalog_menu_item"><a href="">Фитнес-браслеты</a></li>
+          <li class="catalog_menu_item"><a href="">Квадрокоптеры</a></li>
+          <li class="catalog_menu_item"><a href="">Моноподы для селфи</a></li>
+          <li class="catalog_menu_item watch"><a href="">Умные часы</a></li>
+          <li class="catalog_menu_item"><a href="">Экшн-камеры</a></li>
+        </ul>
 
-      <ul class="catalog_list">
-         <li><a href="">Виртуальная реальность</a></li>
-         <li><a href="">Моноподы для селфи</a></li>
-         <li><a href="">Экшн-камеры</a></li>
-         <li><a href="">Фитнес-браслеты</a></li>
-         <li><a href="">Умные часы</a></li>
-         <li><a href="">Квадрокоптеры</a></li>
-      </ul>
-    
-      <ul class="site_navigation">
-        <li class="nav_page_item">
-          <a class="nav_link" href="">Доставка</a>
-        </li>
-        <li class="nav_page_item">
-          <a class="nav_link" href="">Гарантия</a>
-        </li>
-        <li class="nav_page_item">
-          <a class="nav_link" href="">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+        </nav>
+      
+      </div>
 
     </header>
 
-    <main>
+    <main class="main-content">
+
+        <div class="container">
 
       <!--Здесь будет описание товаров магазина-->
 
@@ -102,20 +114,23 @@
 
           <a class="btn_write_us" href="">Напишите нам</a>
        </div>
+
+       </div>
     
     </main>
 
     <footer class="footer_main">
-      <div class="footer-head">
+      <div class="container">
+        <div class="footer-head">
           <img class="logo_bottom" src="img/logo-device.svg" width="163" height="35"
            alt="Логотип магазина Device">
           <a class="enter">Войти</a>
           <a class="compare">Сравнить</a>
           <a class="basket">Корзина</a>
-      </div>
-      <section class="footer_nav">
-        <p class="address">г. Москва, ул. Строителей, 15</p>
-        <ul class="site_navigation">
+        </div>
+        <div class="footer_nav">
+          <p class="address">г. Москва, ул. Строителей, 15</p>
+          <ul class="site_navigation">
             <li class="nav_page_item">
               <a class="nav_link" href="">Доставка</a>
             </li>
@@ -127,8 +142,8 @@
             </li>
           </ul>
           <a class="telefone" href="tel:+74959595">Тел.: +7(495)495-95-95</a>
-      </section>
-          <div class="footer_social">
+        </div>
+        <div class="footer_social">
             <ul>
               <li class="facebook"><a href="">facebook</a></li>
               <li class="instagram"><a href="">instagram</a></li>
@@ -137,7 +152,8 @@
             <a class="logo_html" href="https://htmlacademy.ru/intensive/htmlcss">
               Иконка h-academy
             </a>
-          </div>
+        </div>
+      </div>
     </footer>
 
       <!--ПОПАП ввода личных данных, который ПОСРЕДИНЕ в макете к ТЕКУЩЕМУ заданию-->
