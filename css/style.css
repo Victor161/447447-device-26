@@ -37,7 +37,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: 1200px;
+    min-width: 1200px;
     font-family: "Opensans", Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -112,6 +112,7 @@ button {
     margin-top: 30px;
     margin-left: 0;
     display: flex;
+    position: relative;
 }
 
 .site_navigation::after {
@@ -120,8 +121,8 @@ button {
     width: 100px;
     height: 7px;
     position: absolute;
-    left: 620px;
-    top: 276px;
+    left: 540px;
+    top: 105px;
     z-index: 1;
 }
 
@@ -592,6 +593,7 @@ button {
 }
 
 .servises_list {
+    position: relative;
     display: flex;
     flex-direction: column;
     min-height: 142px;
@@ -605,8 +607,8 @@ button {
     height: 319px;
     background-color: #000000;
     position: absolute;
-    left: 300px;
-    top: 1170px;
+    left: 265px;
+    top: -115px;
 }
 
 .icon_devivery {
@@ -670,24 +672,6 @@ button {
     text-transform: uppercase;
     letter-spacing: 3px; 
     margin-top: -11px;
-}
-
-.servises_list {
-    display: flex;
-    flex-direction: column;
-    min-height: 142px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.servises_list::after {
-    content: " ";
-    width: 7px;
-    height: 319px;
-    background-color: #000000;
-    position: absolute;
-    left: 300px;
-    top: 1170px;
 }
 
 .servises input {
@@ -783,7 +767,6 @@ button {
 
 .logo_1 {
     background-image: url("../img/logo_1_gray.png");
-    margin-left: 30px;
 }
 
 .logo_2 {
@@ -816,6 +799,7 @@ button {
     font-size: 47px;
     font-weight: 700;
     line-height: 48px;
+    position: relative;
 }
 
 .about_us p.heading::before {
@@ -824,8 +808,8 @@ button {
     height: 7px;
     background: #000000;
     position: absolute;
-    left: 20px;
-    top: 1900px;
+    left: 0px;
+    top: -60px;
 }
 
 .write_us p.heading::before {
@@ -834,8 +818,8 @@ button {
     height: 7px;
     background: #000000;
     position: absolute;
-    left: 620px;
-    top: 1900px;
+    left: 0px;
+    top: -60px;
 }
 
 .about_us p.contents,
@@ -864,17 +848,16 @@ button {
     font-size: 16px;
     font-weight: 700;
     line-height: 40px;
+    position: relative;
 }
 
-.trans_item {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 30px;
-}
-
-.trans_item::before {
-    
+.trans_comp_list .trans_item::before {
+    content: url("../img/slider_button.svg");
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: -40px;
+    top: 7px;
 }
 
 .about_us .btn_about_us,
@@ -936,6 +919,7 @@ button {
 
 .footer_social .yellow_line {
     width: 80px;
+    position: relative;
 }
 
 .yellow_line::before {
@@ -944,8 +928,8 @@ button {
    width: 80px;
    height: 7px;
    position: absolute;
-   left: 20px;
-   top: 2810px;
+   left: 0px;
+   top: 10px;
 }
 
 .footer_social .logo_html {
@@ -1025,7 +1009,7 @@ button {
  }
 
 .facebook {
-    content: url(../img/facebook.svg);
+    content: url("../img/facebook.svg");
     width: 32px;
     height: 32px;
 }
@@ -1090,6 +1074,7 @@ button {
 }
 
 .footer_catalog .yellow_line_catalog {
+    position: relative;
     width: 80px;
 }
 
@@ -1099,8 +1084,8 @@ button {
     width: 80px;
     height: 7px;
     position: absolute;
-    left: 20px;
-    top: 1970px;
+    left: 0px;
+    top: 10px;
  }
 
 
@@ -1139,7 +1124,7 @@ button {
     font-weight: 700;
     line-height: 48px;
     margin-top: 43px;
-    margin-left: 82px;
+    margin-left: 60px;
     margin-bottom: 0;
 }
 
@@ -1147,7 +1132,7 @@ button {
     width: 385px;
     display: flex;
     justify-content: space-between;
-    margin-left: 82px;
+    margin-left: 60px;
     list-style-type: none;
     padding: 0;
 }
@@ -1180,6 +1165,10 @@ button {
 
 .catalog_filters {
     width: 100%;
+    background-color: #eeeeee;
+}
+
+.wrap_header_filters {
     background-color: #ebebeb;
 }
 
@@ -1249,9 +1238,11 @@ button {
 }
 
 .filters {
+    width: 468px;
     min-height: 1210px;
     margin-top: 65px;
     margin-left: 45px;
+    background-color: #eeeeee;
 }
 
 .filters_content {
@@ -1322,6 +1313,32 @@ button {
 
 .legend_filters {
     padding-top: 15px;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.filters fieldset {
+    border: none;
+}
+
+.filters .select_color,
+.filters .select_bluetooth {
+    font-size: 14px;
+    line-height: 40px;
+}
+
+
+.filters input[type="checkbox"] {
+    content: url(../img/checkbox-off.svg);
+    width: 27px;
+    height: 23px;
+}
+
+.filters input[type="radio"] {
+    content: url(../img/radio-off.svg);
+    width: 25px;
+    height: 25px;
 }
 
 .pagination_list {
@@ -1381,42 +1398,6 @@ button {
 
 
 
-/*---------------------------------Стили для ФИЛЬТРА КАТАЛОГА------------*/
-
-.filters {
-    background-color: #eeeeee;
-    width: 468px;
-}
-
-.filters fieldset {
-    border: none;
-}
-
-.filters legend {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-weight: 700;
-    line-height: 24px;
-}
-
-.filters .select_color,
-.filters .select_bluetooth {
-    font-size: 14px;
-    line-height: 40px;
-}
-
-
-.filters input[type="checkbox"] {
-    content: url(../img/checkbox-off.svg);
-    width: 27px;
-    height: 23px;
-}
-
-.filters input[type="radio"] {
-    content: url(../img/radio-off.svg);
-    width: 25px;
-    height: 25px;
-}
-
 /*------------------------------------------*/
 
 
@@ -1457,6 +1438,7 @@ button {
     height: 16px;
     padding-left: 16px;
 }
+
 
 .search,
 .enter,
@@ -1510,4 +1492,9 @@ button {
 .pop_closed,
 .find_btn {
     display: none;
+}
+
+
+.dropdown_catalog:hover  .catalog_list {
+   
 }
