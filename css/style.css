@@ -270,9 +270,13 @@ button {
     display: flex;
 }
 
+
 .sliders_menu.slider_1 {
-    display: ;
+    
 }
+
+
+
 
 .photo_monopods {
     width: 400px;
@@ -1525,7 +1529,8 @@ button {
     display: flex;
 }
 
-.header_filters p {
+.header_filters .paragraph_filter,
+.header_filters .paragraph_sort {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -1539,7 +1544,8 @@ button {
 }
 
 .paragraph_sort {
-    margin-left: 252px;
+    display: flex;
+    margin-left: 260px;
 }
 
 .header_filters .triangles_sort {
@@ -1548,7 +1554,6 @@ button {
     position: relative;
     margin-left: auto;
 }
-
 
 .header_filters .sort_up,
 .header_filters .sort_down {
