@@ -1286,14 +1286,14 @@ body {
 
 .footer_nav .address {
     font-size: 15px;
-    color: #464646;
     line-height: 30px;
 }
 
 .footer_index .foot_enter,
 .footer_index .foot_compare,
 .footer_index .foot_basket {
-    color: gray;
+    color: #ffffff;
+    opacity: 0.7;
 }
 
 .footer_nav .address,
@@ -1302,7 +1302,8 @@ body {
 .footer_index .foot_enter:hover,
 .footer_index .foot_compare:hover,
 .footer_index .foot_basket:hover {
-    color: white;
+    color: #ffffff;
+    opacity: 1;
 }
 
 .footer_nav .nav_link:hover {
@@ -1310,9 +1311,11 @@ body {
 }
 
 .footer_nav .nav_link:focus,
-
-.footer_index .foot_basket:focus {
-    color: #7e7e7e;
+.footer_index .foot_enter:focus,
+.footer_index .foot_basket:focus,
+.footer_index .foot_compare:focus {
+    color: #ffffff;
+    opacity: 0.3;
  }
 
 .facebook path,
@@ -1376,16 +1379,19 @@ body {
 }
 
 .footer_catalog .footer_enter_catalog {
-    color: gray;
+    color: #ffffff;
     margin-right: 15px;
+    opacity: 0.7;
 }
 
 .footer_catalog .footer_enter_catalog:hover {
-    color: white;
+    color: #ffffff;
+    opacity: 1;
 }
 
 .footer_catalog .footer_enter_catalog:focus {
-    color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    opacity: 0.3;
 }
 
 .footer_catalog .user_exit {
@@ -1404,14 +1410,7 @@ body {
 
 .footer_social {
     margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.social_list {
-    width: 145px;
-    margin: 0;
-    padding: 0;
+    margin-right: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -1581,7 +1580,7 @@ body {
 	height: 0px;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #231f20;
     position: absolute;
     top: 7px;
     left: 0;   
@@ -1593,7 +1592,7 @@ body {
 	height: 0;
     border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-    border-top: 10px solid black;
+    border-top: 10px solid #231f20;
     position: absolute;
     top: 7px;
     left: 32px; 
@@ -1799,7 +1798,7 @@ body {
 
 .filters legend {
     width: 201px;
-    border-top: 2px solid black;
+    border-top: 2px solid #000000;
 }
 
 .legend_filters {
@@ -2088,13 +2087,6 @@ body {
 .foot_compare:hover path,
 .foot_basket:hover path {
     fill-opacity: 0.6;
-}
-
-.foot_enter:focus,
-.footer_enter_catalog:focus,
-.foot_compare:focus,
-.foot_basket:focus {
-    opacity: 0.3;
 }
 
 .enter:hover,
