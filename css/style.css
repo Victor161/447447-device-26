@@ -47,20 +47,38 @@ body {
     color: #000000;
 }
 
-.inner_page {
-    
-}
-
-a {
+.header_index a,
+.main_index a,
+.footer_index a,
+.modal_login a {
     text-decoration: none;
     color: #000000;
 }
 
-ul {
+.header_index ul,
+.main_index ul,
+.footer_index ul,
+.modal_login ul {
     list-style: none;
 }
 
-button {
+.header_index button,
+.main_index button,
+.footer_index button,
+.modal_login button {
+    border: none;
+}
+
+.inner_page a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.inner_page ul {
+    list-style: none;
+}
+
+.inner_page button {
     border: none;
 }
 
@@ -107,16 +125,14 @@ button {
 
 .search_form {
     height: 46px;
+    padding-top: 0px;
     position: relative;
-    margin-top: -10px;
     margin-right: auto; 
-    margin-bottom: 10px;
-    margin-left: 0px;
     border-bottom: 2px solid #f7e296;    
 }
 
 .search_form::before {
-    content: url(../img/search.svg);
+    content: url("../img/search.svg");
     position: absolute;
     top: 17px;
     left: 0px;
@@ -125,6 +141,7 @@ button {
 }
 
 .search {
+    padding-bottom: 5px;
     margin-left: 40px;
     background-color: #f7e296;
     border: none;
@@ -138,7 +155,7 @@ button {
     color: #635a3c;
 }
 
-.find_btn {
+.header_index .find_btn {
     width: 82px;
     height: 46px;
     margin-left: 100px;
@@ -167,9 +184,6 @@ button {
     color: #4d4d4d;
 }
 
-
-
-
 .compare {
     margin-right: 40px;
 }
@@ -183,7 +197,7 @@ button {
     margin-right: 20px;
 }
 
-.user_exit {
+.header_catalog .user_exit {
     margin-right: 65px;
     color: #ac9e69;
 }
@@ -1176,7 +1190,7 @@ button {
 
 /*------------------------ФУТЕР - ГЛАВНОЙ СТРАНИЦЫ-  НАЧАЛО------------*/
 
-.footer_main {
+.footer_index {
     background-color: #464646;
     background-position: bottom;
     width: 100%;
@@ -1223,8 +1237,7 @@ button {
 }
 
 .footer_social .logo_html {
-    padding-left: 53px;
-
+   
 }
 
 .site_navigation_foot {
@@ -1244,12 +1257,12 @@ button {
     margin-left: auto;
 }
 
-.footer_main .logo_bottom,
+.footer_index .logo_bottom,
 .footer_menu {
     margin-top: 67px;
 }
 
-.footer_main .logo_bottom,
+.footer_index .logo_bottom,
 .footer_catalog .logo_bottom {
     fill: #ffc600;
 }
@@ -1277,19 +1290,19 @@ button {
     line-height: 30px;
 }
 
-.footer_main .foot_enter,
-.footer_main .foot_compare,
-.footer_main .foot_basket {
-    color: rgba(255, 255, 255, 0.7);
+.footer_index .foot_enter,
+.footer_index .foot_compare,
+.footer_index .foot_basket {
+    color: gray;
 }
 
 .footer_nav .address,
 .footer_nav .telefone a,
 .footer_nav .nav_link,
-.footer_main .foot_enter:hover,
-.footer_main .foot_compare:hover,
-.footer_main .foot_basket:hover {
-    color: rgba(255, 255, 255);
+.footer_index .foot_enter:hover,
+.footer_index .foot_compare:hover,
+.footer_index .foot_basket:hover {
+    color: white;
 }
 
 .footer_nav .nav_link:hover {
@@ -1298,7 +1311,7 @@ button {
 
 .footer_nav .nav_link:focus,
 
-.footer_main .foot_basket:focus {
+.footer_index .foot_basket:focus {
     color: #7e7e7e;
  }
 
@@ -1323,7 +1336,7 @@ button {
 .logo_html {
     width: 27px;
     height: 35px;
-    background-image: url("../img/logo-html.svg");
+    background-image: url("../img/logo_html.svg");
     background-repeat: no-repeat;
     background-position: 100% 0%;
 }
@@ -1342,7 +1355,7 @@ button {
 
 /*------------------------ФУТЕР - КАТАЛОГА-СТРАНИЦЫ - НАЧАЛО------------*/
 
-.footer_main {
+.footer_index {
     background-color: #464646;
     background-position: bottom;
     width: 100%;
@@ -1363,12 +1376,12 @@ button {
 }
 
 .footer_catalog .footer_enter_catalog {
-    color: rgba(255, 255, 255, 0.7);
+    color: gray;
     margin-right: 15px;
 }
 
 .footer_catalog .footer_enter_catalog:hover {
-    color: rgba(255, 255, 255);
+    color: white;
 }
 
 .footer_catalog .footer_enter_catalog:focus {
@@ -1527,6 +1540,7 @@ button {
 .header_filters {
     min-height: 70px;
     display: flex;
+    align-items: center;
 }
 
 .header_filters .paragraph_filter,
@@ -1540,6 +1554,7 @@ button {
 }
 
 .paragraph_filter {
+    margin-top: 18px;
     margin-left: 60px;
 }
 
@@ -1550,7 +1565,7 @@ button {
 
 .header_filters .triangles_sort {
     width: 44px;
-    margin: 18px 0;
+    margin-top: -5px;
     position: relative;
     margin-left: auto;
 }
@@ -1562,13 +1577,13 @@ button {
 
 .header_filters .sort_up::before {
     content: " ";
-    width: 0;
-	height: 0;
+    width: 0px;
+	height: 0px;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-    border-bottom: 10px solid #231f20;
+    border-bottom: 10px solid black;
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 0;   
 }
 
@@ -1578,9 +1593,9 @@ button {
 	height: 0;
     border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-    border-top: 10px solid #231f20;
+    border-top: 10px solid black;
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 32px; 
 }
 
@@ -1595,12 +1610,15 @@ button {
 }
 
 .sort_items {
-    width: 288px;
+    padding-left: 50px;
+    width: 320px;
     display: flex;
     justify-content: space-between;
 }
 
 .sort_items button {
+    padding: 0;
+    text-align: left;
     font-size: 14px;   
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
@@ -1616,10 +1634,10 @@ button {
 }
 
 .filters {
-    width: 468px;
+    
     min-height: 1210px;
     margin-top: 65px;
-    margin-left: 45px;
+    margin-left: 48px;
     background-color: #eeeeee;
 }
 
@@ -1628,26 +1646,6 @@ button {
 }
 
 /* ------------------- СТИЛИ для ПОЛЗУНКА ФИЛЬТРА ----------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1712,6 +1710,7 @@ button {
 }
 
 .catalog_item .item_picture {
+    width: 360px;
     height: 380px;
     position: relative;
 }
@@ -1721,11 +1720,13 @@ button {
     height: 380px;
     background-color: rgba(238, 238, 238, 0.7);
     position: absolute;
+    top: 65px;
+    left: 0px;
     display: none;
 }
 
 .picture_mask .in_basket {
-    width: 122px;
+    width: 125px;
     height: 33px;
     margin-top: 173px;
     margin-left: 76px;
@@ -1850,7 +1851,7 @@ button {
 .range_controls .bar {
     width: 55%;
     height: 2px;
-    background: #00ca74;
+    background: #91c92f;
 }
 
 .range_controls .toggle {
@@ -1883,6 +1884,7 @@ button {
 
 .price_controls label {
     display: inline-block;
+    vertical-align: middle;
     width: 32%;
     font-size: 14px;
     line-height: 24px;
@@ -1915,7 +1917,7 @@ button {
 }
 
 .filters .select_color::before {
-    content: url("../img/checkbox-off.svg");
+    content: url("../img/checkbox_off.svg");
     width: 27px;
     height: 23px;
     position: absolute;
@@ -1924,7 +1926,7 @@ button {
 }
 
 .filters .input_check[type="checkbox"]:checked + .select_color::after {
-    content: url("../img/checkbox-on.svg");
+    content: url("../img/checkbox_on.svg");
     width: 27px;
     height: 23px;
     position: absolute;
@@ -2307,7 +2309,6 @@ button {
     opacity: 0.5;
 }
 
-
 .login_names input[type="text"]::placeholder,
 .login_names input[type="email"]::placeholder,
 .freedom_text textarea::placeholder {
@@ -2335,7 +2336,6 @@ button {
 .modal_login .btn_decor:hover {
     background-image: linear-gradient(#f0c52e 41px, #f0c52e 41px);
 }
-
 
 .modal_map {
     position: fixed;
@@ -2376,10 +2376,6 @@ button {
     opacity: 0.3;
 }
 
-
-
-
-
 .modal_login {
     display: none;
 }
@@ -2390,9 +2386,5 @@ button {
 
 /*------------------- МОДАЛКИ - КОНЕЦ------------------------*/
 
-/*-----------------ПРОБНИКИ---------------
-.radio_push input[type="radio"]:checked .slider_2 {
-    display: block;
-}
----------------------------------*/
+
 
